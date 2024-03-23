@@ -14,6 +14,10 @@ app.get("/", (req, res) => {
     res.send("OK");
 });
 
+app.get("/ping", (req, res) => {
+    res.send("PONG");
+});
+
 app.listen(3000, () => {
 	console.log("Servidor está rodando na porta 3000");
 });
